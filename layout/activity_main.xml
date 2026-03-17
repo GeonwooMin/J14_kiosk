@@ -1,0 +1,303 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TabHost xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@android:id/tabhost"
+    tools:context=".MainActivity">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/mainLayout">
+
+
+        <TabWidget
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@android:id/tabs">
+
+        </TabWidget>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@android:id/tabcontent">
+
+            <!-- 무비 쇼 -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:id="@+id/contentMovie"
+                android:background="#8b4513">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="30dp">
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="250dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/movie01"
+                        android:id="@+id/movie01"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:tag="01"
+                        android:background="@drawable/shape_list">
+                    </ImageView>
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="250dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/movie02"
+                        android:id="@+id/movie02"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:tag="02"
+                        android:background="@drawable/shape_list">
+                    </ImageView>
+
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp">
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="250dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/movie03"
+                        android:id="@+id/movie03"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:tag="03"
+                        android:background="@drawable/shape_list">
+                    </ImageView>
+                    <ImageView
+                        android:layout_width="0dp"
+                        android:layout_height="250dp"
+                        android:layout_weight="1"
+                        android:src="@drawable/movie04"
+                        android:id="@+id/movie04"
+                        android:adjustViewBounds="true"
+                        android:scaleType="centerCrop"
+                        android:tag="04"
+                        android:background="@drawable/shape_list">
+                    </ImageView>
+                </LinearLayout>
+            </LinearLayout>
+
+            <!-- 디저트 키오스크 -->
+            <LinearLayout
+                android:id="@+id/contentKiosk"
+                android:orientation="vertical"
+                android:padding="15dp"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                tools:context=".MainActivity">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:id="@+id/menuLayout">
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp"
+                        android:padding="5dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:id="@+id/m1Layout"
+                            android:background="@drawable/shape_list"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp"
+                                android:layout_marginRight="5dp"
+                                android:src="@drawable/cupcake"/>
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/m1"
+                                android:text="500"
+                                android:layout_gravity="center"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:id="@+id/m2Layout"
+                            android:background="@drawable/shape_list"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp"
+                                android:layout_marginRight="5dp"
+                                android:src="@drawable/donut"/>
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/m2"
+                                android:text="600"
+                                android:layout_gravity="center"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:id="@+id/m3Layout"
+                            android:background="@drawable/shape_list"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp"
+                                android:layout_marginRight="5dp"
+                                android:src="@drawable/froyo"/>
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/m3"
+                                android:text="700"
+                                android:layout_gravity="center"/>
+                        </LinearLayout>
+
+                    </LinearLayout>  <!-- 첫줄 수평 레이아웃 -->
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="10dp"
+                        android:padding="5dp">
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:id="@+id/m4Layout"
+                            android:background="@drawable/shape_list"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp"
+                                android:layout_marginRight="5dp"
+                                android:src="@drawable/gingerbread"/>
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/m4"
+                                android:text="800"
+                                android:layout_gravity="center"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:id="@+id/m5Layout"
+                            android:background="@drawable/shape_list"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp"
+                                android:layout_marginRight="5dp"
+                                android:src="@drawable/jellybean"/>
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/m5"
+                                android:text="900"
+                                android:layout_gravity="center"/>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:id="@+id/m6Layout"
+                            android:background="@drawable/shape_list"
+                            android:orientation="vertical">
+                            <ImageView
+                                android:layout_width="match_parent"
+                                android:layout_height="120dp"
+                                android:layout_marginRight="5dp"
+                                android:src="@drawable/lollipop"/>
+                            <RadioButton
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:id="@+id/m6"
+                                android:text="1000"
+                                android:layout_gravity="center"/>
+                        </LinearLayout>
+
+                    </LinearLayout>  <!-- 두번째줄 수평 레이아웃 -->
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginTop="15dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="수량: "
+                            android:textSize="20dp"
+                            android:textStyle="bold"
+                            android:textColor="#61380B"/>
+                        <EditText
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/count"
+                            android:textStyle="bold"
+                            android:textSize="20dp"/>
+                    </LinearLayout>
+
+                    <Button
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="주문"
+                        android:id="@+id/orderBtn"
+                        android:layout_gravity="center"/>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="총금액: "
+                        android:textColor="#ff0000"
+                        android:textSize="27dp"
+                        android:textStyle="bold"
+                        android:id="@+id/result"/>
+
+
+                </LinearLayout><!-- 스위치문에 따른 레이아웃-->
+            </LinearLayout>
+
+
+
+        </FrameLayout>
+
+
+    </LinearLayout>
+</TabHost>
+
+
+
+
